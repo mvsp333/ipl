@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ipl.css"> 
+</head>
+
+<body>
+    <div id="sectionhome">
+
+        <div class="bcolor">
+            <div class="d-flex flex-row">
+                <img class="iplimg" src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" />
+                <h1 class="h1">INDIAN PREMIER LEAGUE</h1>
+            </div>
+
+            <button class="bt" onclick="display('sectionmatch')">MATCHES</button>
+            <button class="bt" onclick="display('sectionpointtable')">POINTS TABLE</button>
+            <button class="bt" onclick="display('sectionteams')">TEAMS</button>
+            <button class="bt" onclick="display('sectionnews')">NEWS</button>
+            <button class="bt1" onclick="display('sectionauction')">AUCTION</button>
+            <button class="bt1" onclick="display('sectionpast')">IPL 2K23</button>
+            <button class="bt1" onclick="display('sectionipl')">STATS</button>
+        </div>
+
+        <div class="home">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://assets.iplt20.com/bcci/articles/1708604741_2.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.iplt20.com/bcci/articles/1707564495_IPL%20Press%20Release.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.iplt20.com/bcci/articles/1711025565__AI_6733%20%281%29.png" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionmatch">
+        <div class="matches ">
+            <h1>MATCHES</h1>
+            <div class="match d-flex flex-row">
+                <div class=" padding d-flex flex-column">
+                    <p>MATCH 1</p>
+                    <h5>MAR, FRI 22</h5>
+                    <p>8:00 pm IST</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <div>
+                        <p>MA Chidambaram Stadium, Chennai</p>
+                        <p class="ycolor">CHENNAI SUPER KINGS</p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/CSK.png" onclick="display('sectioncsk')" />
+                    </div>
+                    <img class="vimg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBJnJe8bx7GShumY0FpeXu-BKrAEMEFvz1uefrboYs9XKpL5fN" />
+                    <div class="rcb">
+                        <p>ROYAL CHALLENGERS BANGALORE</p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/RCB.png" onclick="display('sectionrcb')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="matches ">
+            <div class="match d-flex flex-row">
+                <div class=" padding d-flex flex-column">
+                    <p>MATCH 2</p>
+                    <h5>MAR, SAT 23</h5>
+                    <p>3:30 pm IST</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <div>
+                        <p>PCA New Stadium, Mullanpur</p>
+                        <p class="rcolor">PUNJAB KINGS</p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/PBKS.png" onclick="display('sectionpbks')" />
+                    </div>
+                    <img class="vimg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBJnJe8bx7GShumY0FpeXu-BKrAEMEFvz1uefrboYs9XKpL5fN" />
+                    <div class="dc">
+                        <p>DELHI CAPITALS</p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/DC.png" onclick="display('sectiondc')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="matches ">
+            <div class="match d-flex flex-row">
+                <div class=" padding d-flex flex-column">
+                    <p>MATCH 3</p>
+                    <h5>MAR, SAT 23</h5>
+                    <p>8:00 pm IST</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <div>
+                        <p>Eden Gardens, Kolkata</p>
+                        <p class="pcolor">KOLKATA KNIGHT RIDERS</p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/KKR.png" onclick="display('sectionkkr')" />
+                    </div>
+                    <img class="vimg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBJnJe8bx7GShumY0FpeXu-BKrAEMEFvz1uefrboYs9XKpL5fN" />
+                    <div class="rcb">
+                        <p>SUNRISERS HYDERABAD</p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/SRH.png" onclick="display('sectionsrh')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="matches ">
+            <div class="match d-flex flex-row">
+                <div class=" padding d-flex flex-column">
+                    <p>MATCH 4</p>
+                    <h5>MAR, SUN 24</h5>
+                    <p>3:30 pm IST</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <div>
+                        <p>Sawai Mansingh Stadium, Jaipur</p>
+                        <p class="bluec">RAJASTHAN ROYALS</p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/RR.png" onclick="display('sectionrr')" />
+                    </div>
+                    <img class="vimg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBJnJe8bx7GShumY0FpeXu-BKrAEMEFvz1uefrboYs9XKpL5fN" />
+                    <div class="rcb">
+                        <p class="bluec">LUCKNOW SUPER GIANTS </p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/ADAMetmKk61682948573LSG.png" onclick="display('sectionlsg')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="matches ">
+            <div class="match d-flex flex-row">
+                <div class=" padding d-flex flex-column">
+                    <p>MATCH 5</p>
+                    <h5>MAR, SUN 24</h5>
+                    <p>8:00 pm IST</p>
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <div>
+                        <p>Narendra Modi Stadium, Ahmedabad</p>
+                        <p class="pcolor">GUJARAT TITANS</p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/GT.png?v=1" onclick="display('sectiongi')" />
+                    </div>
+                    <img class="vimg" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBJnJe8bx7GShumY0FpeXu-BKrAEMEFvz1uefrboYs9XKpL5fN" />
+                    <div class="rcb">
+                        <p class="bluec">MUMBAI INDIANS</p>
+                        <img class="fimg" src="https://scores.iplt20.com/ipl/teamlogos/MI.png" onclick="display('sectionmi')" />
+                    </div>
+                </div>
+            </div>
+            <button class=" match bt" onclick="display('sectionhome')">BACK</button>
+        </div>
+
+
+    </div>
+    <div id="sectionpointtable">
+        <h1 class="blackbg">POINTS TABLE</h1>
+        <div class=" pts d-flex flex-row">
+
+            <div class="pt d-flex flex-column">
+                <h3>TEAM</h3>
+            <hr class="w1">
+            
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/SRH.png?v=2" onclick="display('sectionsrh')" />
+                    <p>SRH</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/RCB.png?v=2" onclick="display('sectionrcb')" />
+                    <p>RCB</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/LSG.png?v=2" onclick="display('sectionlsg')" />
+                    <p>LSG</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/DC.png?v=2" onclick="display('sectiondc')" />
+                    <p>DC</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/CSK.png?v=2" onclick="display('sectioncsk')" />
+                    <p>CSK</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/GT.png?v=2" onclick="display('sectiongi')" />
+                    <p>GT</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/PBKS.png?v=2" onclick="display('sectiongi')" />
+                    <p>PBKS</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/KKR.png?v=2" onclick="display('sectionkkr')" />
+                    <p>KKR</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/RR.png?v=2" onclick="display('sectionrr')" />
+                    <p>RR</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <img class="pointimg" src="https://scores.iplt20.com/ipl/teamlogos/MI.png?v=2" onclick="display('sectionmi')" />
+                    <p>MI</p>
+                </div>
+            </div>
+            <div class=" margin d-flex flex-column">
+
+                <h3 class="">P</h3>
+                <hr>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+            </div>
+            <div class=" w margin d-flex flex-column">
+                <h3>W</h3>
+                <hr>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+            </div>
+            <div class="l margin d-flex flex-column">
+                <h3>L</h3>
+                <hr>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+            </div>
+            <div class="NR margin d-flex flex-column">
+                <h3>NR</h3>
+                <hr>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+            </div>
+            <div class="NRR margin d-flex flex-column">
+                <h3>NRR</h3>
+                <hr>
+                <p>0.000</p>
+                <p>0.000</p>
+                <p>0.000</p>
+                <p>0.000</p>
+                <p>0.000</p>
+                <p>0.000</p>
+                <p>0.000</p>
+                <p>0.000</p>
+                <p>0.000</p>
+                <p>0.000</p>
+            </div>
+            <div class="PTS margin d-flex flex-column">
+                <h3>PTS</h3>
+                <hr>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+                <p>0</p>
+            </div>
+        </div>
+        <button class="bt" onclick="display('sectionhome')">BACK</button>
+    </div>
+    <div id="sectionteams">
+        <div class="d-flex flex-column">
+            <div class="d-flex flex-row">
+                <div class="ocolor">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/SRH/Logos/Logooutline/SRHoutline.png?hgghhg" onclick="display('sectionsrh')" />
+                    <h1>Sunrisers Hyderabad</h1>
+                </div>
+                <div class="colorr">
+                    <img class="simg" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RCB/Logos/Logooutline/RCBoutline.png" onclick="display('sectionrcb')" />
+                    <h1>ROYAL CHALLENGERS BANGALORE</h1>
+                </div>
+                <div class="colorb" onclick="display('sectiondc')">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/DC/Logos/LogoOutline/DCoutline.png" />
+                    <h1>DELHI CAPITALS</h1>
+                </div>
+                <div class="colorpu" onclick="display('sectionkkr')">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/KKR/Logos/Logooutline/KKRoutline.png" />
+                    <h1>KOLKATA KNIGHT RIDERS</h1>
+                </div>
+                <div class="tcb" onclick="display('sectiongi')">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/GT/Logos/Logooutline/GToutline.png" />
+                    <h1>GUJARAT TITANS</h1>
+                </div>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="csk " onclick="display('sectioncsk')">
+                    <img class="cimg" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/CSK/logos/Logooutline/CSKoutline.png" />
+                    <h1>CHENNAI SUPER KINGS</h1>
+                </div>
+                <div class="pbks" onclick="display('sectionpbks')">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png" />
+                    <h1>PUNJAB KINGS</h1>
+                </div>
+                <div class="rr" onclick="display('sectionrr')">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RR/Logos/Logooutline/RRoutline.png" />
+                    <h1>RAJASTHAN ROYALS</h1>
+                </div>
+                <div class="mi" onclick="display('sectionmi')">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/MI/Logos/Logooutline/MIoutline.png" />
+                    <h1>MUMBAI INDIANS</h1>
+                </div>
+                <div class="lsg" onclick="display('sectionlsg')">
+                    <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/LSG/Logos/Logooutline/LSGoutline.png" />
+                    <h1>LUCKNOW SUPER GIANTS</h1>
+                </div>
+            </div>
+        </div>
+        <button class=" match bt" onclick="display('sectionhome')">BACK</button>
+    </div>
+    <div>
+        <div id="sectionsrh">
+            <div class="ocolor  ">
+                <h1>SUNRISERS HYDERABAD</h1>
+                <img class="wbg" src="https://www.iplt20.com/assets/images/team-trophy.png" />
+                <p class="margin1">2016</p>
+                <a href="https://www.sunrisershyderabad.in/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat " src="https://static.cricbuzz.com/a/img/v1/152x152/i1/c352460/pat-cummins.jpg" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin ssrh d-flex flex-row justify-content-center">
+                    <div class="ssrh">
+                        <h3 class="sqsrh">BATSMEN</h3>
+                        <P class="sqsrh">ABDUL SAMAD</P>
+                        <p class="sqsrh">MARKRAM</p>
+                        <p class="sqsrh">RAHUL TRIPATI</p>
+                        <p class="sqsrh">GLENN PHILIPS</p>
+                        <p class="sqsrh">MAYANK</p>
+                        <p class="sqsrh">ANMOL</p>
+                        <p class="sqsrh">KLAASEN</p>
+                        <p class="sqsrh">NITISH</p>
+                        <p class="sqsrh">TRAVIS HEAD</p>
+                    </div>
+                    <div class="ssrh d-flex flex-column ">
+                        <h3 class="sqsrh"> ALL ROUNDERS</h3>
+                        <p class="sqsrh">ABHISHEK</p>
+                        <p class="sqsrh">JANSEN</p>
+                        <p class="sqsrh">SUNDAR</p>
+                        <p class="sqsrh">SANVIR</p>
+                        <p class="sqsrh">HASARANGA</p>
+                    </div>
+                    <div class="ssrh">
+                        <h1 class="sqsrh">BOWLERS</h1>
+                        <p class="sqsrh">AKASH</p>
+                        <p class="sqsrh">SHAHBAZ</p>
+                        <p class="sqsrh">B.KUMAR</p>
+                        <p class="sqsrh">FAROOQI</p>
+                        <p class="sqsrh">JAYDEV</p>
+                        <p class="sqsrh">NATARAJAN</p>
+                        <p class="sqsrh">URMAN </p>
+                        <p class="sqsrh">MAYANK</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+
+        </div>
+        <div id="sectionrcb">
+            <div class="srrcb">
+                <h1>ROYAL CHALLENGERS BANGALORE</h1>
+                <a href="https://www.royalchallengers.com/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat " src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2024/94.png" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin srcb d-flex flex-row justify-content-center">
+                    <div class="srcb">
+                        <h3 class="sqrcb">BATSMEN</h3>
+                        <P class="sqrcb">VIRAT KOHLI</P>
+                        <p class="sqrcb">RAJAT</p>
+                        <p class="sqrcb">ANUJ</p>
+                        <p class="sqrcb">KARTHIK</p>
+                        <p class="sqrcb">JACKS</p>
+                        <p class="sqrcb">SAURAV</p>
+                        <p class="sqrcb">SUYASH</p>
+                    </div>
+                    <div class="srcb d-flex flex-column ">
+                        <h3 class="sqrcb"> ALL ROUNDERS</h3>
+                        <p class="sqrcb">MAXWELL</p>
+                        <p class="sqrcb">LOMLOR</p>
+                        <p class="sqrcb">KARN</p>
+                        <p class="sqrcb">GREEN</p>
+                        <p class="sqrcb">DAGAR</p>
+                        <p class="sqrcb">SWAPNIL</p>
+                    </div>
+                    <div class="srcb">
+                        <h1 class="sqrcb">BOWLERS</h1>
+                        <p class="sqrcb">M.SIRAJ</p>
+                        <p class="sqrcb">AKASH</p>
+                        <p class="sqrcb">FERGUSON</p>
+                        <p class="sqrcb">YASH</p>
+                        <p class="sqrcb">CURRAN</p>
+                        <p class="sqrcb">TOPLEY</p>
+                        <p class="sqrcb">HIMANSHU</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+        </div>
+        <div id="sectionlsg">
+            <div class="sblsg">
+                <h1>LUCKNOW SUPER GIANTS</h1>
+                <a href="https://www.lucknowsupergiants.in/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat " src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/19.png" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin slsg d-flex flex-row justify-content-center">
+                    <div class="slsg">
+                        <h3 class="sqlsg">BATSMEN</h3>
+                        <P class="sqlsg">PADIKKAL</P>
+                        <p class="sqlsg">DE KOCK</p>
+                        <p class="sqlsg">POORAN</p>
+                        <p class="sqlsg">TURNER</p>
+                        <p class="sqlsg">KL RAHUL</p>
+                    </div>
+                    <div class="slsg d-flex flex-column ">
+                        <h3 class="sqlsg"> ALL ROUNDERS</h3>
+                        <p class="sqlsg">AYUSH</p>
+                        <p class="sqlsg">DEEPAK</p>
+                        <p class="sqlsg">GOWTHAM</p>
+                        <p class="sqlsg">KRUNAL</p>
+                        <p class="sqlsg">MAYERS</p>
+                        <p class="sqlsg">STOINIS</p>
+                        <p class="sqlsg">WILLEY</p>
+                    </div>
+                    <div class="slsg">
+                        <h1 class="sqlsg">BOWLERS</h1>
+                        <p class="sqlsg">SHIVAM</p>
+                        <p class="sqlsg">SHAMAR</p>
+                        <p class="sqlsg">MAYANK</p>
+                        <p class="sqlsg">MOHSIN</p>
+                        <p class="sqlsg">BISHNOI</p>
+                        <p class="sqlsg">YASH</p>
+                        <p class="sqlsg">AMIT</p>
+                        <p class="sqlsg">NAVEEN</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+        </div>
+        <div id="sectiondc">
+            <div class="sbdc">
+                <h1>DELHI CAPTIALS</h1>
+                <a href="https://www.delhicapitals.in/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat " src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/214.png" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin sdc d-flex flex-row justify-content-center">
+                    <div class="sdc">
+                        <h3 class="sqdc">BATSMEN</h3>
+                        <P class="sqdc">WARNER</P>
+                        <p class="sqdc">PANT</p>
+                        <p class="sqdc">SHAW</p>
+                        <p class="sqdc">DHULL</p>
+                        <p class="sqdc">HOPE</p>
+                        <p class="sqdc">POREL</p>
+                        <p class="sqdc">BROOK</p>
+                        <p class="sqdc">RICKY</p>
+                        <p class="sqdc">STUBBS</p>
+                    </div>
+                    <div class="sdc d-flex flex-column ">
+                        <h3 class="sqdc">ALL ROUNDERS</h3>
+                        <p class="sqdc">AXAR PATEL</p>
+                        <p class="sqdc">LALIT YADAV</p>
+                        <p class="sqdc"> MITCHELL MARSH</p>
+                        <p class="sqdc">SUMIT KUMAR</p>
+                        <p class="sqdc">RASIK</p>
+                    </div>
+                    <div class="sdc">
+                        <h1 class="sqdc">BOWLERS</h1>
+                        <p class="sqdc">KULDEEP</p>
+                        <p class="sqdc">KHALEEL</p>
+                        <p class="sqdc">PRAVEEN</p>
+                        <p class="sqdc">ISHANT</p>
+                        <p class="sqdc">MUKESH</p>
+                        <p class="sqdc">RICHARD</p>
+                        <p class="sqdc">ANRICH</p>
+                        <p class="sqdc">VICKY</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+        </div>
+        <div id="sectioncsk">
+            <div class="sycsk">
+                <h1>CHENNAI SUPER KINGS</h1>
+                <img class="wbg" src="https://www.iplt20.com/assets/images/team-trophy.png" />
+                <p class="margin1">2010,2011,2018,2021,2023</p>
+                <a href="https://www.chennaisuperkings.com/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat " src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2024/102.png" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin scsk d-flex flex-row justify-content-center">
+                    <div class="scsk">
+                        <h3 class="sqcsk">BATSMEN</h3>
+                        <P class="sqcsk">RUTURAJ</P>
+                        <p class="sqcsk">MS.DHONI</p>
+                        <p class="sqcsk">RAHANE</p>
+                        <p class="sqcsk">RASEEB</p>
+                        <p class="sqcsk">SAMEER</p>
+                    </div>
+                    <div class="scsk d-flex flex-column ">
+                        <h3 class="sqcsk">ALL ROUNDERS</h3>
+                        <p class="sqcsk">R.JADEJA</p>
+                        <p class="sqcsk">M.SANTNER</p>
+                        <p class="sqcsk">MOEEN</p>
+                        <p class="sqcsk">SHIVAM</p>
+                        <p class="sqcsk">MANDAL</p>
+                        <p class="sqcsk">RAVINDRA</p>
+                        <p class="sqcsk">SHARDUL</p>
+                        <p class="sqcsk">D.MITCHELL</p>
+                        <p class="sqcsk">NISHANT</p>
+                    </div>
+                    <div class="scsk">
+                        <h1 class="sqcsk">BOWLERS</h1>
+                        <p class="sqcsk">DEEPAK</p>
+                        <p class="sqcsk">MAHESH</p>
+                        <p class="sqcsk">MUKESH</p>
+                        <p class="sqcsk">RAHMAN</p>
+                        <p class="sqcsk">PRASHANT</p>
+                        <p class="sqcsk">TUSHAR</p>
+                        <p class="sqcsk">MATHESHA</p>
+                        <p class="sqcsk">SIMARJI</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+        </div>
+        <div id="sectiongi">
+            <div class=" sdgi">
+                <h1>GURJARAT TITANS</h1>
+                <img class="wbg" src="https://www.iplt20.com/assets/images/team-trophy.png" />
+                <p class="margin1">2022</p>
+                <a href="https://www.gujarattitansipl.com/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat " src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/62.png" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin sgi d-flex flex-row justify-content-center">
+                    <div class="sgi">
+                        <h3 class="sqgi">BATSMEN</h3>
+                        <P class="sqgi">SHUBMAN</P>
+                        <p class="sqgi">MILLER</p>
+                        <p class="sqgi">M.WADE</p>
+                        <p class="sqgi">W.SAHA</p>
+                        <p class="sqgi">KANE</p>
+                        <p class="sqgi">VIJAY</p>
+                    </div>
+                    <div class="sgi d-flex flex-column ">
+                        <h3 class="sqgi"> ALL ROUNDERS</h3>
+                        <p class="sqgi">OMARZAI</p>
+                        <p class="sqgi">SUDHARSAN</p>
+                        <p class="sqgi">NALKANDE</p>
+                        <p class="sqgi">SHAHRUKH</p>
+                        <p class="sqgi">ABHINAV</p>
+                    </div>
+                    <div class="sgi">
+                        <h1 class="sqgi">BOWLERS</h1>
+                        <p class="sqgi">JAYANT</p>
+                        <p class="sqgi">RAHUL</p>
+                        <p class="sqgi">SHAMI</p>
+                        <p class="sqgi">TYAGI</p>
+                        <p class="sqgi">RASHID</p>
+                        <p class="sqgi">KISHORE</p>
+                        <p class="sqgi">JOSHUA</p>
+                        <p class="sqgi">MISHRA</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+        </div>
+        <div id="sectionpbks">
+            <div class="srpbks">
+                <h1>PUNJAB KINGS</h1>
+                <a href="https://www.punjabkingsipl.in/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/11.png" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin spbks d-flex flex-row justify-content-center">
+                    <div class="spbks">
+                        <h3 class="sqpbks">BATSMEN</h3>
+                        <P class="sqpbks">DHAMAN</P>
+                        <p class="sqpbks">JITESH</p>
+                        <p class="sqpbks">JONNY</p>
+                        <p class="sqpbks">PRABSIMRAN</p>
+                        <p class="sqpbks">LIAM</p>
+                        <p class="sqpbks">HARPREET</p>
+                        <p class="sqpbks">RILEE</p>
+                        <p class="sqpbks">SHASHANK</p>
+                    </div>
+                    <div class="spbks d-flex flex-column ">
+                        <h3 class="sqpbks"> ALL ROUNDERS</h3>
+                        <p class="sqpbks">C.WOAKS</p>
+                        <p class="sqpbks">V.PRATAP</p>
+                        <p class="sqpbks">TANAY</p>
+                        <p class="sqpbks">RISHI</p>
+                        <p class="sqpbks">C.CURRAN</p>
+                    </div>
+                    <div class="spbks">
+                        <h1 class="sqpbks">BOWLERS</h1>
+                        <p class="sqpbks">H.BRAR</p>
+                        <p class="sqpbks">ARSHDEEP</p>
+                        <p class="sqpbks">RABADA</p>
+                        <p class="sqpbks">ELLIS</p>
+                        <p class="sqpbks">RAHUL</p>
+                        <p class="sqpbks">VIDWATH</p>
+                        <p class="sqpbks">CHAHAR</p>
+                        <p class="sqpbks">HARSHAL</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+        </div>
+        <div id="sectionkkr">
+            <div class="spkkr">
+                <h1>KOLKATA KNIGHT RIDERS</h1>
+                <img class="wbg" src="https://www.iplt20.com/assets/images/team-trophy.png" />
+                <p class="margin1">2012,2014</p>
+                <a href="https://www.kkr.in/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat " src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/12.png" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin skkr d-flex flex-row justify-content-center">
+                    <div class="skkr">
+                        <h3 class="sqkkr">BATSMEN</h3>
+                        <P class="sqkkr">IYER</P>
+                        <p class="sqkkr">RINKU</p>
+                        <p class="sqkkr">GURBAZ</p>
+                        <p class="sqkkr">RANA</p>
+                        <p class="sqkkr">SALT</p>
+                        <p class="sqkkr">BHARAT</p>
+                        <p class="sqkkr">PANDEY</p>
+                    </div>
+                    <div class="skkr d-flex flex-column ">
+                        <h3 class="sqkkr"> ALL ROUNDERS</h3>
+                        <p class="sqkkr">ANKUL</p>
+                        <p class="sqkkr">RUSSELL</p>
+                        <p class="sqkkr">VENKATESH</p>
+                        <p class="sqkkr">RANDEEP</p>
+                        <p class="sqkkr">ANGKRISH</p>
+                    </div>
+                    <div class="skkr">
+                        <h1 class="sqkkr">BOWLERS</h1>
+                        <p class="sqkkr">SUYASH</p>
+                        <p class="sqkkr">NARINE</p>
+                        <p class="sqkkr">ARORA</p>
+                        <p class="sqkkr">VARUN</p>
+                        <p class="sqkkr">M.STARC</p>
+                        <p class="sqkkr">CHETAN</p>
+                        <p class="sqkkr">HUSSAIN</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+
+        </div>
+        <div id="sectionrr">
+            <div class="sprr">
+                <h1>RAJASTHAN ROYALS</h1>
+                <img class="wbg" src="https://www.iplt20.com/assets/images/team-trophy.png" />
+                <p class="margin1">2008</p>
+                <a href="https://www.rajasthanroyals.com/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat " src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/190.png" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin srr d-flex flex-row justify-content-center">
+                    <div class="srr">
+                        <h3 class="sqrr">BATSMEN</h3>
+                        <P class="sqrr">SAMSON</P>
+                        <p class="sqrr">BUTLER</p>
+                        <p class="sqrr">HETMYER</p>
+                        <p class="sqrr">JAISWAL</p>
+                        <p class="sqrr">JUREL</p>
+                        <p class="sqrr">RIYAN</p>
+
+                    </div>
+                    <div class="s d-flex flex-column ">
+                        <h3 class="sqrr"> ALL ROUNDERS</h3>
+                        <p class="sqrr">ABID</p>
+                        <p class="sqrr">R.ASHWIN</p>
+                        <p class="sqrr">KUNAL</p>
+                        <p class="sqrr">V.DUBEY</p>
+                        <p class="sqrr">R.POWELL</p>
+                    </div>
+                    <div class="srr">
+                        <h1 class="sqrr">BOWLERS</h1>
+                        <p class="sqrr">AVESH</p>
+                        <p class="sqrr">Y.CHAHAL</p>
+                        <p class="sqrr">A.ZAMPA</p>
+                        <p class="sqrr">BOULT</p>
+                        <p class="sqrr">BURGER</p>
+                        <p class="sqrr">KULDEEP</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+        </div>
+        <div id="sectionmi">
+            <div class="sbmi">
+                <h1>MUMBAI INDIANS</h1>
+                <img class="wbg" src="https://www.iplt20.com/assets/images/team-trophy.png" />
+                <p class="margin1">2013,2015,2017,2019,2020</p>
+                <a href="https://www.mumbaiindians.com/" target="_blank">OFFICIAL TEAM SITE<br></a>
+                <img class="pat " src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/IPLHeadshot2023/6.png" />
+                <h3 class="cap">Captain</h3>
+
+
+                <div class=" margin smi d-flex flex-row justify-content-center">
+                    <div class="smi">
+                        <h3 class="sqmi">BATSMEN</h3>
+                        <P class="sqmi">ROHIT</P>
+                        <p class="sqmi">DEWALD</p>
+                        <p class="sqmi">SKY</p>
+                        <p class="sqmi">KISHAN</p>
+                        <p class="sqmi">TILAK</p>
+                        <p class="sqmi">DAVID</p>
+                        <p class="sqmi">VINOD</p>
+                    </div>
+                    <div class="smi d-flex flex-column ">
+                        <h3 class="sqmi"> ALL ROUNDERS</h3>
+                        <p class="sqmi">PANDYA</p>
+                        <p class="sqmimi">ARJUN.T</p>
+                        <p class="sqmimi">M.NABI</p>
+                        <p class="sqmimi">G.COETZEE</p>
+                        <p class="sqmi">ANSHUL</p>
+                        <p class="sqmi">NEHAL</p>
+                        <p class="sqmi">A.NAMAN</p>
+                    </div>
+                    <div class="smi">
+                        <h1 class="sqmi">BOWLERS</h1>
+                        <p class="sqmi">BUMRAH</p>
+                        <p class="sqmi">PIYUSH</p>
+                        <p class="sqmi">AKASH</p>
+                        <p class="sqmi">JASON</p>
+                        <p class="sqmi">DILHAN</p>
+                        <p class="sqmi">SHREYAS</p>
+                        <p class="sqmi">NUWAN</p>
+                        <p class="sqmi">KUMAR</p>
+                    </div>
+                </div>
+                <button class=" match bt" onclick="display('sectionteams')">BACK</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="sectionipl">
+        <div class="shome">
+            <h1 class="viha">ALL TIME RECORDS</h1>
+            <div class="d-flex flex-column">
+                <div class="d-flex flex-row">
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Virat%20Kohli.png" />
+                        <p class="voc">Orange Cap</p>
+                        <p class="voc1">Virat Kohli</p>
+                        <p class="voc2">7263</p>
+                        <p class="voc3">RUNS</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Shikhar%20Dhawan.png" />
+                        <p class="voc4">Most Fours</p>
+                        <p class="voc1">Shikhar Dhawan</p>
+                        <p class="voc2">750</p>
+                        <p class="voc3">FOURS</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Chris%20Gayle.png" />
+                        <p class="voc4">Most Sixes</p>
+                        <p class="voc1">Chris Gayle</p>
+                        <p class="voc2">357</p>
+                        <p class="voc3">SIXES</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Chris%20Gayle.png" />
+                        <p class="voc4">Highest Score</p>
+                        <p class="voc1">Chris Gayle</p>
+                        <p class="voc2">175</p>
+                        <p class="voc3">SCORE</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Andre%20Russell.png" />
+                        <p class="voc4">Highest Strike Rate</p>
+                        <p class="voc1">Andre Russell</p>
+                        <p class="voc2">174</p>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Yuzvendra%20Chahal.png" />
+                        <p class="voc5">Purple Cap</p>
+                        <p class="voc1">Yuzvendra Chahal</p>
+                        <p class="voc2">187</p>
+                        <p class="voc3">WICKETS</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Alzarri%20Joseph%20.png" />
+                        <p class="voc4">Best Bowling Figures</p>
+                        <p class="voc1">Alzarri Joseph</p>
+                        <p class="voc2">6/12</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Lungi%20%20Ngidi.png" />
+                        <p class="voc4">Best Bowling Average</p>
+                        <p class="voc1">Lungi Ngidi</p>
+                        <p class="voc2">17.92</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/images/default-player-statsImage.png" />
+                        <p class="voc4">Best Economy</p>
+                        <p class="voc1">Anil Kumble</p>
+                        <p class="voc2">6.59</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Bhuvneshwar%20Kumar.png" />
+                        <p class="voc4">Most Dot</p>
+                        <p class="voc1">Bhuvneshwar Kumar</p>
+                        <p class="voc2">1534</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <button class=" match bt" onclick="display('sectionhome')">BACK</button>
+    </div>
+    <div id="sectionpast">
+        <div class="shome">
+            <h1>IPL 2K23 STATS</h1>
+            <div class="d-flex flex-column">
+                <div class="d-flex flex-row">
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Shubman%20Gill.png" />
+                        <p class="voc">Orange Cap</p>
+                        <p class="voc1">Shubman Gill</p>
+                        <p class="voc2">890</p>
+                        <p class="voc3">RUNS</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Shubman%20Gill.png" />
+                        <p class="voc4">Most Fours</p>
+                        <p class="voc1">Shubman Gill</p>
+                        <p class="voc2">85</p>
+                        <p class="voc3">FOURS</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Faf%20Du%20Plessis.png" />
+                        <p class="voc4">Most Sixes</p>
+                        <p class="voc1">Faf Du Plessis</p>
+                        <p class="voc2">36</p>
+                        <p class="voc3">SIXES</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Shubman%20Gill.png" />
+                        <p class="voc4">Highest Score</p>
+                        <p class="voc1">Shubman Gill</p>
+                        <p class="voc2">129</p>
+                        <p class="voc3">SCORE</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Rashid%20Khan.png" />
+                        <p class="voc4">Highest Strike Rate</p>
+                        <p class="voc1">Rashid Khan</p>
+                        <p class="voc2">216</p>
+                    </div>
+
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Mohammad%20Shami.png" />
+                        <p class="voc5">Purple Cap</p>
+                        <p class="voc1">Mohammad Shami</p>
+                        <p class="voc2">17</p>
+                        <p class="voc3">WICKETS</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Alzarri%20Joseph%20.png" />
+                        <p class="voc4">Best Bowling Figures</p>
+                        <p class="voc1">Akash Madhwal</p>
+                        <p class="voc2">5/5</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Mark%20Wood.png" />
+                        <p class="voc4">Best Bowling Average</p>
+                        <p class="voc1">Mark Wood</p>
+                        <p class="voc2">11.81</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Matthew%20Short.png" />
+                        <p class="voc4">Best Economy</p>
+                        <p class="voc1">Matthew Short</p>
+                        <p class="voc2">6.25</p>
+                    </div>
+                    <div class="shome1">
+                        <img src="https://scores.iplt20.com/ipl/playerimages/Mohammad%20Shami.png" />
+                        <p class="voc4">Most Dot</p>
+                        <p class="voc1">Mohammad Shami</p>
+                        <p class="voc2">193</p>
+                    </div>
+                </div>
+                
+            </div>
+         </div>
+         
+         <button class=" match bt" onclick="display('sectionhome')">BACK</button>
+   
+
+    </div>
+    <div id ="sectionauction">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/l_Hw-rGWhGA?rel=0"
+              allowfullscreen
+            ></iframe>
+          </div>
+    </div>
+    <div id="sectionnews">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+            </ol>   
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://assets.iplt20.com/bcci/articles/1700576122_Thumbnail.png" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://assets.iplt20.com/bcci/articles/1710066785__AI_9439.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://assets.iplt20.com/bcci/articles/1708339307_IPLDM10426.JPG" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
